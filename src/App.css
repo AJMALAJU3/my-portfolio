@@ -1,0 +1,38 @@
+/* Ensure the body and html take up full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container to hold the slides */
+.container {
+  display: flex;
+  flex-direction: column; /* Arrange slides vertically */
+  height: 100vh; /* Set container height to full viewport height */
+  scroll-snap-type: y mandatory; /* Enable snapping vertically */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Each slide styling */
+.slide {
+  flex: 0 0 100vh; /* Make each slide full height */
+  width: 100%; /* Full width of viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: #ddd; /* Default background */
+  scroll-snap-align: start; /* Snap slide to the start */
+  border-bottom: 1px solid #ccc; /* Optional for separation */
+}
+
+/* Add custom styles for different slides */
+.slide:nth-child(odd) {
+  background: #aaa;
+}
+
+.slide:nth-child(even) {
+  background: #888;
+}

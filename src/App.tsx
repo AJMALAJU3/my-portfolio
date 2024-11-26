@@ -6,11 +6,11 @@ const App: React.FC = () => {
     <div className="min-h-screen overflow-y-auto snap-y snap-mandatory relative bg-black">
       <BackgroundStars />
 
-      <div className="h-screen flex items-center justify-center w-full bg-gray-200 snap-start opacity-30">
+      <div className="h-screen flex items-center justify-center bg-neutral-950 w-full snap-start">
         slide 1
       </div>
      
-      <div className="h-screen flex items-center justify-center bg-gray-800 text-white snap-start">
+      <div className="h-screen flex items-center justify-center bg-neutral-950 w-full snap-start">
         Slide 4
       </div>
     </div>
